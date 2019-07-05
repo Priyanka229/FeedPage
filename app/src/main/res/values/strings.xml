@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FeedPage</string>
+    <string name="search_text">Search</string>
+    <string name="reset_text">Reset </string>
+    <string name="date_sort_text">Sort by Date</string>
+    <string name="likes_sort_text">Sort by Likes</string>
+    <string name="views_sort_text">Sort by Views</string>
+    <string name="shares_sort_text">Sort by Shares</string>
+    <string name="no_data_message">We are not getting any results.\nTry another search</string>
+</resources>

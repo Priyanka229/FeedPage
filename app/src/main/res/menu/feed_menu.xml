@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/reset"
+          android:title="@string/reset_text"
+          app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/date_sort"
+          android:title="@string/date_sort_text"
+          app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/likes_sort"
+          android:title="@string/likes_sort_text"
+          app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/views_sort"
+          android:title="@string/views_sort_text"
+          app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/shares_sort"
+          android:title="@string/shares_sort_text"
+          app:showAsAction="collapseActionView"/>
+</menu>
