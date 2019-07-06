@@ -20,7 +20,7 @@
             <ImageView
                     android:id="@+id/image_iv"
                     android:layout_width="fill_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="@dimen/image_height"
                     android:scaleType="fitXY"
                     android:src="@drawable/no_image"/>
         </LinearLayout>
@@ -29,7 +29,7 @@
                       android:layout_height="match_parent"
                       android:orientation="vertical"
                       android:layout_weight="1"
-                      android:paddingBottom="10dp">
+                      android:paddingBottom="@dimen/padding10dp">
 
             <RelativeLayout android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -37,15 +37,16 @@
                 <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp">
+                        android:padding="@dimen/padding8dp">
 
                     <TextView
                             android:id="@+id/post_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:layout_marginEnd="4dp"
-                            android:layout_marginLeft="4dp"
+                            android:textSize="@dimen/large_text_size"
+                            android:layout_marginEnd="@dimen/margin4dp"
+                            android:layout_marginLeft="@dimen/margin4dp"
+                            android:text="@string/postname"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@+id/post_date"
@@ -56,13 +57,14 @@
                             android:id="@+id/post_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="12sp"
+                            android:textSize="@dimen/small_text_size"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
-                            android:layout_marginStart="2dp"
+                            android:text="@string/postdate"
+                            android:layout_marginStart="@dimen/margin2dp"
                             android:layout_centerVertical="true"
                             android:textColor="@android:color/darker_gray"
-                            android:layout_marginRight="2dp"/>
+                            android:layout_marginRight="@dimen/margin2dp"/>
 
                 </RelativeLayout>
 
@@ -76,13 +78,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:padding="4dp"
+                            android:padding="@dimen/padding4dp"
                             android:gravity="center"
-                            android:layout_margin="4dp">
+                            android:layout_margin="@dimen/margin4dp">
 
                         <ImageView
-                                android:layout_width="18dp"
-                                android:layout_height="18dp"
+                                android:layout_width="@dimen/icon_size_width"
+                                android:layout_height="@dimen/icon_size_height"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/icons_love96"/>
 
@@ -90,9 +92,10 @@
                                 android:id="@+id/post_likes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="16sp"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginLeft="2dp"
+                                android:text="@string/postlikes"
+                                android:textSize="@dimen/medium_text_size"
+                                android:layout_marginStart="@dimen/margin2dp"
+                                android:layout_marginLeft="@dimen/margin2dp"
                                 android:textColor="@android:color/holo_red_light"/>
 
                     </LinearLayout>
@@ -101,13 +104,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:padding="4dp"
+                            android:padding="@dimen/padding4dp"
                             android:gravity="center"
-                            android:layout_margin="4dp">
+                            android:layout_margin="@dimen/margin4dp">
 
                         <ImageView
-                                android:layout_width="18dp"
-                                android:layout_height="18dp"
+                                android:layout_width="@dimen/icon_size_width"
+                                android:layout_height="@dimen/icon_size_height"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/icons_views96"/>
 
@@ -115,9 +118,10 @@
                                 android:id="@+id/post_views"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="16sp"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginLeft="2dp"
+                                android:textSize="@dimen/medium_text_size"
+                                android:text="@string/postviews"
+                                android:layout_marginStart="@dimen/margin2dp"
+                                android:layout_marginLeft="@dimen/margin2dp"
                                 android:textColor="@android:color/holo_blue_light"/>
 
 
@@ -127,13 +131,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:padding="4dp"
-                            android:layout_margin="4dp"
+                            android:padding="@dimen/padding4dp"
+                            android:layout_margin="@dimen/margin4dp"
                             android:gravity="center">
 
                         <ImageView
-                                android:layout_width="18dp"
-                                android:layout_height="18dp"
+                                android:layout_width="@dimen/icon_size_width"
+                                android:layout_height="@dimen/icon_size_height"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/icons_share96"/>
 
@@ -141,9 +145,10 @@
                                 android:id="@+id/post_shares"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="16sp"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginLeft="2dp"
+                                android:text="@string/postshares"
+                                android:textSize="@dimen/medium_text_size"
+                                android:layout_marginStart="@dimen/margin2dp"
+                                android:layout_marginLeft="@dimen/margin2dp"
                                 android:textColor="@android:color/holo_blue_dark"/>
                     </LinearLayout>
                 </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">150dp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="icon_size_width">18dp</dimen>
+    <dimen name="icon_size_height">18dp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="margin2dp">2dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="padding4dp">4dp</dimen>
+    <dimen name="padding10dp">10dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+</resources>

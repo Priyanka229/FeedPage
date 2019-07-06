@@ -7,4 +7,9 @@
     <string name="views_sort_text">Sort by Views</string>
     <string name="shares_sort_text">Sort by Shares</string>
     <string name="no_data_message">We are not getting any results.\nTry another search</string>
+    <string name="postname">POSTNAME</string>
+    <string name="postdate">POSTDATE</string>
+    <string name="postlikes">0</string>
+    <string name="postviews">0</string>
+    <string name="postshares">0</string>
 </resources>
