@@ -52,6 +52,20 @@ class FeedVM(application: Application): AndroidViewModel(application) {
                 compositeDisposable.add(
                     feedInteractor.getFeedPosts(getApplication(), path!!)
                         .subscribeOn(Schedulers.io())
+                        .map {
+                            for (item in it) {
+                                val post = Post(
+                                    item.thumbImg.orEmpty(),
+                                    item.eventName.orEmpty(),
+                                    item.eventDate ?: 0L,
+                                    item.views ?: 0,
+                                    item.likes ?: 0,
+                                    item.shares ?: 0
+                                )
+
+                                PostDatabase.getAppDatabase(getApplication()).postDao().insertPost(post)
+                            }
+                        }
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(
                             {
@@ -61,19 +75,6 @@ class FeedVM(application: Application): AndroidViewModel(application) {
 
                                 if (pageNo > paginationMap.size) {
                                     isLastPage = true
-                                }
-
-                                for (item in it) {
-                                    val post = Post(
-                                        item.thumbImg.orEmpty(),
-                                        item.eventName.orEmpty(),
-                                        item.eventDate ?: 0L,
-                                        item.views ?: 0,
-                                        item.likes ?: 0,
-                                        item.shares ?: 0
-                                    )
-
-                                    PostDatabase.getAppDatabase(getApplication()).postDao().insertPost(post)
                                 }
                             },
                             {

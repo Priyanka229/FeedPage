@@ -19,9 +19,6 @@ abstract class PostDatabase : RoomDatabase() {
             if (INSTANCE == null) {
                 INSTANCE =
                     Room.databaseBuilder(context.applicationContext, PostDatabase::class.java, "post-database")
-                        // allow queries on the main thread.
-                        // Don't do this on a real app! See PersistenceBasicSample for an example.
-                        .allowMainThreadQueries()
                         .build()
             }
             return INSTANCE as PostDatabase
