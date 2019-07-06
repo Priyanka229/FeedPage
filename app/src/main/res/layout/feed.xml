@@ -31,13 +31,14 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/large_text_size"
                     android:layout_marginEnd="@dimen/margin2dp"
-                    android:layout_marginLeft="@dimen/margin2dp"
+                    android:layout_marginRight="@dimen/margin2dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:text="@string/postname"
                     android:layout_toLeftOf="@+id/post_date"
+                    android:layout_toStartOf="@+id/post_date"
                     android:layout_centerVertical="true"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="@android:color/darker_gray" />
 
             <TextView
                     android:id="@+id/post_date"
@@ -47,7 +48,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:text="@string/postdate"
-                    android:layout_marginStart="@dimen/margin2dp"
+                    android:layout_marginEnd="@dimen/margin2dp"
                     android:layout_centerVertical="true"
                     android:textColor="@android:color/darker_gray"
                     android:layout_marginRight="@dimen/margin2dp"/>
