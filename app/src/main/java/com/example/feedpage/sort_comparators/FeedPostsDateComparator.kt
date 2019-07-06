@@ -9,8 +9,8 @@ class FeedPostsDateComparator: Comparator<Post>
         val date2 = r2.eventDate!!.toLong()
 
         return when {
-            date1 < date2 -> -1
-            date1 > date2 -> 1
+            date1 > date2 -> -1
+            date1 < date2 -> 1
             else -> 0
         }
     }
